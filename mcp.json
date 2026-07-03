@@ -5,24 +5,12 @@
   "server_type": "stdio",
   "command": "node",
   "args": ["server.js"],
-  "env": {
-    "FIXTURE_TOKEN": {
-      "required": false,
-      "description": "Optional fake business token for env encryption display testing."
-    }
-  },
   "sidecar": {
     "image": "node:20-alpine"
   },
   "stdio": {
     "command": "node",
     "args": ["server.js"],
-    "env": {
-      "FIXTURE_TOKEN": {
-        "required": false,
-        "description": "Optional fake business token for env encryption display testing."
-      }
-    },
     "sidecar": {
       "image": "node:20-alpine"
     }
