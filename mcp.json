@@ -1,0 +1,34 @@
+{
+  "name": "meshpilot-stdio-echo-fixture",
+  "version": "1.0.0",
+  "description": "Safe stdio MCP fixture for MeshPilot GitHub import testing.",
+  "server_type": "stdio",
+  "stdio": {
+    "command": "node",
+    "args": ["server.js"],
+    "env": {
+      "FIXTURE_TOKEN": {
+        "required": false,
+        "description": "Optional fake business token for env encryption display testing."
+      }
+    },
+    "sidecar": {
+      "image": "node:20-alpine"
+    }
+  },
+  "tools": [
+    {
+      "name": "echo",
+      "description": "Echoes the provided text for import smoke testing.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  ]
+}
+
