@@ -1,0 +1,12 @@
+{
+  "name": "meshpilot-stdio-echo-fixture",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Safe stdio MCP fixture for MeshPilot GitHub import testing.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {}
+}
+
